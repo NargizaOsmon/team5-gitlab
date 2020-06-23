@@ -31,8 +31,9 @@ Version :
 |Name                 |Versions|
 ---------------------|------------
 
-|GitLab |    13.0|
-|Terraform |      11.16|
+|GitLab              |    13.0|
+
+|Terraform           |      11.16|
 
 
 Prerequisites :
@@ -44,4 +45,4 @@ According to the GitLab official page, it is recommended to use a server with:
 - 2GB of swap space.
 - Domain or subdomain pointing to the server IP address. (optional)
 
- [Click Here]()
+ How to Install GitLab server please [Click Here](https://github.com/solongocyber/team5-gitlab/blob/master/GitLab%20Installation%20on%20CentOS%207.md)

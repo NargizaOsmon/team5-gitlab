@@ -44,6 +44,11 @@ This is expected Infrastructure Architecture when apply completed with Terraform
 
 ![last pic](https://user-images.githubusercontent.com/63433671/85366530-250bca80-b4ed-11ea-84b1-78fa9d89ff80.png)
 
+![Screen Shot 2020-06-20 at 12 02 01 PM](https://user-images.githubusercontent.com/63433671/85376353-3361e280-b4fd-11ea-99c2-8249347b8d4e.png)
+
+remote-exec !!!!!!!!!! explaination needed?
+
+Once installation is succesfully completed you will see the GitLab Logo on your terminal. 
 
 
 The last step is Configure GitLab through the Web Interface.

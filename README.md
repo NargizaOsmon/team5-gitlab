@@ -2,6 +2,9 @@
 # Team-5 GitLab Project![Gitlab](https://adambcomer.com/blog/assets/img/post-1-cover.jpeg)
 
 ![gitlab](https://i.ytimg.com/vi/MqL6BMOySIQ/maxresdefault.jpg)
+
+Which piture is better to have here??????
+
 ## What is GitLab?
 ---
 
@@ -30,9 +33,7 @@ Version :
 
 |Name                 |Versions|
 ---------------------|------------
-
 |GitLab              |    13.0|
-
 |Terraform           |      11.16|
 
 

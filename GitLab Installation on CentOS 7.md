@@ -50,7 +50,7 @@ Terraform needs to initialize with provider AWS.
  Once Terraform initialized with cloud provider, same time it will download plugin for you.  it's time to run terraform plan command and see what resources will be created. 
 
  Run: 
- > terraform plan
+ > terraform plan -var-file devtf.vars
  
  <img width="834" alt="Screen Shot 2020-06-25 at 5 21 31 PM" src="https://user-images.githubusercontent.com/63433671/85801467-8956a600-b708-11ea-84fa-1ac36e9ce66a.png">
 <img width="925" alt="Screen Shot 2020-06-25 at 5 21 49 PM" src="https://user-images.githubusercontent.com/63433671/85801479-8f4c8700-b708-11ea-96ea-79071aca0b67.png">
@@ -69,7 +69,11 @@ This is expected Infrastructure Architecture when apply completed with Terraform
 <img width="778" alt="Screen Shot 2020-06-23 at 1 51 53 AM" src="https://user-images.githubusercontent.com/63433671/85370333-22f93a00-b4f4-11ea-9eeb-7e287c40ce08.png">
 
 
+If you are happy with plan, It's time to deploy your resources with terraform apply command.
 
+Run: 
+
+>> terraform -var-file dev.tfvars
 
 
 

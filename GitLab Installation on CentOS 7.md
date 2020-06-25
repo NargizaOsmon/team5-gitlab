@@ -66,14 +66,16 @@ This is expected Infrastructure Architecture when apply completed with Terraform
 
 ![Hybrid Cloud Architecture (3)](https://user-images.githubusercontent.com/63433671/85800404-85c21f80-b706-11ea-9879-d03b70c200b1.png)
 
-<img width="778" alt="Screen Shot 2020-06-23 at 1 51 53 AM" src="https://user-images.githubusercontent.com/63433671/85370333-22f93a00-b4f4-11ea-9eeb-7e287c40ce08.png">
-
 
 If you are happy with plan, It's time to deploy your resources with terraform apply command.
 
 Run: 
 
 >> terraform -var-file dev.tfvars
+
+
+
+<img width="778" alt="Screen Shot 2020-06-23 at 1 51 53 AM" src="https://user-images.githubusercontent.com/63433671/85370333-22f93a00-b4f4-11ea-9eeb-7e287c40ce08.png">
 
 
 

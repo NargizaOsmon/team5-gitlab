@@ -1,9 +1,9 @@
-# team5-gitlab
-# Team-5 GitLab Project![Gitlab](https://adambcomer.com/blog/assets/img/post-1-cover.jpeg)
+
+# Team-5 GitLab Project
 
 ![gitlab](https://i.ytimg.com/vi/MqL6BMOySIQ/maxresdefault.jpg)
 
-Which piture is better to have here??????
+
 
 ## What is GitLab?
 ---
@@ -25,9 +25,7 @@ GitLab is a web-based open-source Git repository manager  written in Ruby and fi
 
 `GitLab Installation by Terraform `
 
-`Resources`
 
-`Contributors`
 
 Version :
 

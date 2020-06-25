@@ -71,7 +71,7 @@ If you are happy with plan, It's time to deploy your resources with terraform ap
 
 Run: 
 
->> terraform -var-file dev.tfvars
+`  terraform apply  -var-file dev.tfvars` 
 
 
 
@@ -117,5 +117,7 @@ Username: root
 Password: [the password you have set]
 Enter the login credentials, click the Sign in button and you will be redirected to the GitLab Welcome page.
 
-![](https://linuxize.com/post/how-to-install-and-configure-gitlab-on-centos-7/gitlab-welcome-page.jpg?ezimgfmt=ng:webp/ngcb26)
+Welcome to GitLab!
+
+å![](https://linuxize.com/post/how-to-install-and-configure-gitlab-on-centos-7/gitlab-welcome-page.jpg?ezimgfmt=ng:webp/ngcb26)
 

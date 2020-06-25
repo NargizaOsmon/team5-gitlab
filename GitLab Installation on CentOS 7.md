@@ -2,21 +2,14 @@
 
 This project we installed GitLab server using Terraform , on a CentOS 7 only for testing purpose.
 
-First, Terraform needs to initialize with provider AWS.  
+In order to Terraform deploy resources , you need to deside :
+- what cloud provider are you going to use. 
+- Set credentials with proper permissions.
 
+When you start builing infrastracture using Terraform, you begin writing configuration files create all your resources. 
+We create a VPC and all other components that you can use is following:
 
-
-
-
-![init](https://user-images.githubusercontent.com/63433671/85368690-58e8ef00-b4f1-11ea-96a6-adb26848e723.png)
-
-Using Terraform which creates VPC with following components:  
-
-
-- 3 private  subnets
-
-- 3 public  subnets
-
+- 3 private, 3 public  subnets
 - Public subnets attached to IGW. 
 
 - Private subnets attached to NG. 
@@ -25,37 +18,77 @@ Using Terraform which creates VPC with following components:
 
 - Create Public and private keys
 
-- Install GitLab server
-
-
 - Add Security groups and open nessasarly ports
 
 - Create Variables and tags
 
 - Create instance
 
-Typically, when you start using Terraform, you begin at the local command line by writing configuration files and then running them with "terraform apply" commands. 
+- SSH to instance Install GitLab server using "remote-exec" defined in null.resource file. remote-exec !!!!!!!!!! explaination needed?
+?
 
-<img width="672" alt="Screen Shot 2020-06-23 at 1 50 39 AM" src="https://user-images.githubusercontent.com/63433671/85370255-08bf5c00-b4f4-11ea-8b5d-eb658fbf77aa.png">
+We choose AWS for provider and it's in the provider.tf file.
+Terraform needs to initialize with provider AWS.
+
+`provider.tf`
+
+![](https://user-images.githubusercontent.com/63433671/85265268-a6088a80-b437-11ea-83eb-2fd1b413ce00.png)
+
+ Run:    
+>  terraform init  
+ 
+ 
+ 
+
+
+
+![init](https://user-images.githubusercontent.com/63433671/85368690-58e8ef00-b4f1-11ea-96a6-adb26848e723.png)
+
+
+
+ 
+ Once Terraform initialized with cloud provider, same time it will download plugin for you.  it's time to run terraform plan command and see what resources will be created. 
+
+ Run: 
+ > terraform plan
+ 
+ <img width="834" alt="Screen Shot 2020-06-25 at 5 21 31 PM" src="https://user-images.githubusercontent.com/63433671/85801467-8956a600-b708-11ea-84fa-1ac36e9ce66a.png">
+<img width="925" alt="Screen Shot 2020-06-25 at 5 21 49 PM" src="https://user-images.githubusercontent.com/63433671/85801479-8f4c8700-b708-11ea-96ea-79071aca0b67.png">
+
+ 
+
+
+This is expected Infrastructure Architecture when apply completed with Terraform .
+
+
+
+
+
+![Hybrid Cloud Architecture (3)](https://user-images.githubusercontent.com/63433671/85800404-85c21f80-b706-11ea-9879-d03b70c200b1.png)
+
 <img width="778" alt="Screen Shot 2020-06-23 at 1 51 53 AM" src="https://user-images.githubusercontent.com/63433671/85370333-22f93a00-b4f4-11ea-9eeb-7e287c40ce08.png">
+
+
+
+
+
+
+
+
+
+
 
 
 ![](https://user-images.githubusercontent.com/63433671/85369068-04923f00-b4f2-11ea-9799-42e8287d9401.png)
 
 ![](https://user-images.githubusercontent.com/63433671/85369086-0a882000-b4f2-11ea-952c-60701aad341f.png)
 
-This is expected Infrastructure Architecture when apply completed with Terraform .
 
-![last pic](https://user-images.githubusercontent.com/63433671/85366530-250bca80-b4ed-11ea-84b1-78fa9d89ff80.png)
-
-remote-exec !!!!!!!!!! explaination needed?
 
 Once installation is succesfully completed you will see the GitLab Logo on your terminal. 
 
 
-
-![Screen Shot 2020-06-20 at 12 02 01 PM](https://user-images.githubusercontent.com/63433671/85376353-3361e280-b4fd-11ea-99c2-8249347b8d4e.png)
-
+<img width="944" alt="Screen Shot 2020-06-24 at 10 44 24 PM" src="https://user-images.githubusercontent.com/63433671/85800545-c9b52480-b706-11ea-98af-01042926ee94.png">
 
 
 

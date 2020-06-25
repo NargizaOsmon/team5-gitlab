@@ -5,6 +5,9 @@ This project we installed GitLab server using Terraform , on a CentOS 7 only for
 First, Terraform needs to initialize with provider AWS.  
 
 
+
+
+
 ![init](https://user-images.githubusercontent.com/63433671/85368690-58e8ef00-b4f1-11ea-96a6-adb26848e723.png)
 
 Using Terraform which creates VPC with following components:  
@@ -31,6 +34,7 @@ Using Terraform which creates VPC with following components:
 
 - Create instance
 
+Typically, when you start using Terraform, you begin at the local command line by writing configuration files and then running them with "terraform apply" commands. 
 
 <img width="672" alt="Screen Shot 2020-06-23 at 1 50 39 AM" src="https://user-images.githubusercontent.com/63433671/85370255-08bf5c00-b4f4-11ea-8b5d-eb658fbf77aa.png">
 <img width="778" alt="Screen Shot 2020-06-23 at 1 51 53 AM" src="https://user-images.githubusercontent.com/63433671/85370333-22f93a00-b4f4-11ea-9eeb-7e287c40ce08.png">

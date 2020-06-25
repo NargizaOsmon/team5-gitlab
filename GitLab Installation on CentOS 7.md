@@ -58,7 +58,7 @@ Terraform needs to initialize with provider AWS.
  
 
 
-This is expected Infrastructure Architecture when apply completed with Terraform .
+This is expected Infrastructure Architecture .
 
 
 

@@ -35,7 +35,8 @@ Terraform needs to initialize with provider AWS.
 ![](https://user-images.githubusercontent.com/63433671/85265268-a6088a80-b437-11ea-83eb-2fd1b413ce00.png)
 
  Run:    
->  terraform init  
+
+`terraform init`
  
  
  
@@ -50,7 +51,8 @@ Terraform needs to initialize with provider AWS.
  Once Terraform initialized with cloud provider, same time it will download plugin for you.  it's time to run terraform plan command and see what resources will be created. 
 
  Run: 
- > terraform plan -var-file devtf.vars
+ 
+ ` terraform plan -var-file devtf.vars`
  
  <img width="834" alt="Screen Shot 2020-06-25 at 5 21 31 PM" src="https://user-images.githubusercontent.com/63433671/85801467-8956a600-b708-11ea-84fa-1ac36e9ce66a.png">
 <img width="925" alt="Screen Shot 2020-06-25 at 5 21 49 PM" src="https://user-images.githubusercontent.com/63433671/85801479-8f4c8700-b708-11ea-96ea-79071aca0b67.png">
@@ -71,7 +73,7 @@ If you are happy with plan, It's time to deploy your resources with terraform ap
 
 Run: 
 
-`  terraform apply  -var-file dev.tfvars` 
+`terraform apply  -var-file dev.tfvars` 
 
 
 

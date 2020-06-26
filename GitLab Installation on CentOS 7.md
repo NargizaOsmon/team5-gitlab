@@ -24,8 +24,9 @@ We create a VPC and all other components that you can use is following:
 
 - Create instance
 
-- SSH to instance Install GitLab server using "remote-exec" defined in null.resource file. remote-exec !!!!!!!!!! explaination needed?
-?
+- Creating S3 bucket
+
+- SSH to instance Install GitLab server using "remote-exec" defined in null.resource file. 
 
 We choose AWS for provider and it's in the provider.tf file.
 Terraform needs to initialize with provider AWS.
